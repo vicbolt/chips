@@ -1,0 +1,51 @@
+:root,
+::after,
+::before {
+    //Company main colours
+    --color-main: orange;
+    --color-second: #c38a8a00;
+    --color-third: #55b03e00;
+
+    //Main colours
+    --color-red: red;
+    --color-yellow: yellow;
+
+    //Basics-colours
+    --color-black: black;
+    --color-white: white;
+    --color-gray: rgba(128, 128, 128);
+
+    //Cold-colours
+    --color-green: green;
+    --color-purple: purple;
+    --color-pink: pink;
+
+    //Warm-colours
+    --color-orange: orange;
+    --color-brown: brown;
+    --color-beige: beige;
+
+    --gradient: linear-gradient(
+        120deg,
+        var(--c-color-main),
+        var(--c-color-second)
+    );
+
+    //Font-colours
+    --font-main: var(--c-color-main);
+    --font-second: var(--c-color-second);
+    --font-third: var(--c-color-third);
+    --font-red: var(--c-color-red);
+    --font-blue: var(--c-color-blue);
+    --font-gray: var(--c-color-gray);
+
+    --typo-main: "Arial", sans-serif;
+    --typo-second: 'Caveat', cursive;
+    --typo-third:'Ysabeau SC', sans-serif;
+
+    --a-1: 0.3s ease all;
+    --a-2: 0.5s ease all;
+
+    //Box-shadow
+    --b-shadow: 0px 0px 0px #00000029;
+}

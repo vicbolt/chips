@@ -1,0 +1,12 @@
+@mixin flex($dir, $wrap, $just, $align) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin wrapper($width: 90%, $max-width: 1400px) {
+    margin: auto;
+    width: $width;
+    max-width: $max-width;
+}

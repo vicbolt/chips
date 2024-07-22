@@ -1,0 +1,128 @@
+.violette_flavour{
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    background-image: url('/public/violette/fondo_violette.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .bag{
+        position: absolute;
+        left: 14%;
+        width: 70%;
+    }
+
+    & .cloud{
+
+        &-1{
+            position: absolute;
+            width: 20%;
+            left: 6rem;
+            animation: clouds 4s infinite ease-in-out alternate-reverse;
+        }
+
+        &-2{
+            position: absolute;
+            width: 10%;
+            left: 21rem;
+            animation: clouds 7s infinite ease-in-out alternate-reverse;
+            animation-delay: .5s;
+        }
+
+
+
+        @keyframes clouds{
+            from {
+                transform: rotate(-4deg);
+                transform: scale(1);
+                transform: translateX(0rem);
+              }
+              to {
+                transform: rotate(4deg);
+                transform: scale(1.05);
+                transform: translateX(1rem);
+
+
+              }
+        }
+    }
+
+    & .balls{
+        &-1{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            width: 10%;
+            // animation: balls 4s ease-in forwards ;
+
+        }
+
+        &-2{
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            width: 10%;
+            transform: rotate(90deg);
+            animation: balls 5s ease-in forwards;
+        }
+
+        @keyframes balls {
+            from{
+                width: 10%;
+            }
+            to{
+                width: 200%;
+            }
+        }
+    }
+}
+
+
+.hell_flavour{
+    position: sticky;
+    top: 0;
+    background-color: #e1355d;
+    background-image: url('/public/hell/fondo_hell.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .bag{
+        position: absolute;
+        left: 14%;
+        width: 70%;
+    }
+
+    & .fire{
+        position: absolute;
+        width: 27%;
+        left: 33%;
+        top: -25px;
+    }
+
+}
+
+.troll_flavour{
+    position: sticky;
+    top: 0;
+    background-color: #629c4e;
+    background-image: url('/public/troll/fondo_troll.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .bag{
+        position: absolute;
+        left: 14%;
+        width: 70%;
+    }
+
+    & .fire{
+        position: absolute;
+        width: 27%;
+        left: 33%;
+        top: -25px;
+    }
+
+}
